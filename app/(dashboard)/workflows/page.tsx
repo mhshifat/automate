@@ -3,6 +3,7 @@ import CreateWorkflowDrawer from "@/components/modules/workflows/create-workflow
 import DashboardLayout from "@/components/shared/dashboard-layout";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
+import Link from "next/link";
 
 export default async function WorkflowsPage() {
   const workflows = await getWorkflows();
@@ -19,16 +20,18 @@ export default async function WorkflowsPage() {
       
       <div className="flex flex-col gap-5 mt-5">
         {workflows?.map(workflow => (
-          <Card key={workflow.id} className="flex items-center gap-5 justify-between">
-            <CardHeader>
-              <CardTitle>{workflow.title}</CardTitle>
-              <CardDescription>{workflow.description}</CardDescription>
-            </CardHeader>
+          <Link key={workflow.id} href={`/workflows/editor/${workflow.id}`}>
+            <Card className="flex items-center gap-5 justify-between">
+              <CardHeader>
+                <CardTitle>{workflow.title}</CardTitle>
+                <CardDescription>{workflow.description}</CardDescription>
+              </CardHeader>
 
-            <div className="p-6">
-              <Switch />
-            </div>
-          </Card>
+              <div className="p-6">
+                <Switch />
+              </div>
+            </Card>
+          </Link>
         ))}
       </div>
     </DashboardLayout>
