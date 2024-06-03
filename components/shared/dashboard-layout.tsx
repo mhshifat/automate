@@ -1,13 +1,14 @@
 import { PropsWithChildren } from "react";
 import DashboardHeader from "./dashboard-header";
+import { cn } from "@/lib/utils";
 
-export default function DashboardLayout({ children, title }: PropsWithChildren<{ title: string }>) {
+export default function DashboardLayout({ children, title, className }: PropsWithChildren<{ title: string, className?: string }>) {
   return (
-    <div className="flex-1 h-full overflow-y-auto">
+    <div className="flex-1 overflow-y-auto flex flex-col h-screen">
         <DashboardHeader
           title={title}
         />
-        <div className="p-5">
+        <div className={cn("p-5 flex-1", className)}>
           {children}
         </div>
       </div>

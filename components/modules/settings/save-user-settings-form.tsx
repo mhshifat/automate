@@ -14,7 +14,7 @@ interface SaveUserSettingsFormProps {
 
 export default function SaveUserSettingsForm({ defaultValues }: SaveUserSettingsFormProps) {
   const form = useForm({
-    defaultValues: defaultValues
+    defaultValues: defaultValues || {}
   });
 
   function handleSubmit() {

@@ -27,12 +27,6 @@ export default async function Header() {
           </ul>
         ) : (
           <>
-            <Button asChild size="sm" variant="ghost">
-              <Link href="/posts/create">Create Post</Link>
-            </Button>
-            <Button asChild size="sm" variant="ghost">
-              <Link href="/billing">Billing</Link>
-            </Button>
             <ClerkLoaded>
               <UserButton afterSignOutUrl="/" />
             </ClerkLoaded>

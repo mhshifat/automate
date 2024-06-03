@@ -1,10 +1,11 @@
-import { cn } from '@/lib/utils';
-import { HomeIcon, SettingsIcon } from 'lucide-react';
+import { HomeIcon, SettingsIcon, CableIcon, CloudLightningIcon } from 'lucide-react';
 import Link from 'next/link';
 import SidebarLink from './sidebar-link';
 
 const SIDEBAR_MENUS = [
   { title: "home", path: "/dashboard", active: true, icon: HomeIcon },
+  { title: "workflows", path: "/workflows", active: true, icon: CloudLightningIcon },
+  { title: "connections", path: "/connections", active: true, icon: CableIcon },
   { title: "settings", path: "/settings", active: true, icon: SettingsIcon },
 ]
 

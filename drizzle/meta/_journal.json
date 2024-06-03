@@ -22,6 +22,48 @@
       "when": 1716738882800,
       "tag": "0002_pretty_carnage",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1717254615357,
+      "tag": "0003_supreme_cannonball",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1717255818736,
+      "tag": "0004_demonic_thena",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1717334827694,
+      "tag": "0005_late_silhouette",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1717335031151,
+      "tag": "0006_rich_wolverine",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1717425617208,
+      "tag": "0007_lying_richard_fisk",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1717425932232,
+      "tag": "0008_handy_doctor_spectrum",
+      "breakpoints": true
     }
   ]
 }
